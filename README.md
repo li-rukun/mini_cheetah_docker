@@ -2,7 +2,7 @@
 
 ##### 注：由于qt-opensource-linux-x64-5.10.0.run文件过大无法上传，请自行下载并放至该文件夹下 https://download.qt.io/new_archive/qt/5.10/5.10.0/
 
-### 安装 Docker
+### 一、安装 Docker
 1.更新apt缓存
 
 `sudo apt-get update`
@@ -19,7 +19,7 @@
 
 `sudo service docker restart`
 
-### Docker配置国内镜像源
+### 二、Docker配置国内镜像源
 1.使用文本编辑器打开配置文件：
 
 `sudo gedit /etc/docker/daemon.json`
@@ -48,19 +48,19 @@
 
 `docker info`
 
-### Docker使用
+### 三、Docker使用
 
-##### 创建镜像
+##### 1.创建镜像
 
 `docker build -t robot .`
 
 注：这里将镜像名设为robot。
 
-##### 允许本地连接
+##### 2.允许本地连接
 
 `xhost +local:docker`
 
-##### 运行容器
+##### 3.运行容器
 
 ```
 docker run -it \
@@ -73,7 +73,7 @@ docker run -it \
 
 注：这里将容器命名为mini_cheetah。
 
-##### 安装Qt5.10.0
+##### 4.安装Qt5.10.0
 
 打开tmp文件夹
 
@@ -85,7 +85,7 @@ docker run -it \
 
 按照指引进行操作，登录可跳过，安装路径选择/root/Qt，并记得勾选Qt5.10.0。
 
-##### 到此mini_cheetah的开发环境已搭建完成。
+##### 5.到此mini_cheetah的开发环境已搭建完成。
 
 ### 其他一些常用Docker命令
 
