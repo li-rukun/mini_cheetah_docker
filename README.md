@@ -1,13 +1,13 @@
 ### 基于Docker的Mini Cheetah开发环境搭建（ubuntu版本为18.04）
 
 ### 安装 Docker
-1.更新apt缓存
+1.更新apt缓存  
 `sudo apt-get update`
-2.安装docker
+2.安装docker  
 `sudo apt-get install docker.io docker-compose`
-3.将当前用户添加到docker用户组
+3.将当前用户添加到docker用户组  
 `sudo usermod -aG docker ${USER}`
-4.重启docker服务
+4.重启docker服务  
 `sudo service docker restart`
 
 ### Docker配置国内镜像源
