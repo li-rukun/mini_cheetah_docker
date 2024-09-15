@@ -1,5 +1,7 @@
 ## 基于Docker的Mini Cheetah开发环境搭建（ubuntu版本为18.04）
 
+##### 注：由于qt-opensource-linux-x64-5.10.0.run文件过大无法上传，请自行下载并放至该文件夹下 https://download.qt.io/new_archive/qt/5.10/5.10.0/
+
 ### 安装 Docker
 1.更新apt缓存
 
